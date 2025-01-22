@@ -1,4 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: Lato;
+}
+
+/* HEADER */
+
+header {
+  background-color: rgba(229, 84, 115, 0.1);
+}
+
+.banner {
+  max-width: 1440px;
+  margin: auto;
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner-title {
+  width: 50%;
+}
+
+.banner-title h1 {
+  color: rgb(39, 39, 39);
+  font-size: 5rem;
+  font-weight: 800;
+  line-height: 96px;
+}
+
+.banner-title p {
+  color: rgba(39, 39, 39, 0.6);
+  font-size: 1.12rem;
+  font-weight: 400;
+  line-height: 30px;
+  padding: 32px 0px;
+}
+
+.banner-title button {
+  color: rgb(255, 255, 255);
+  font-size: 1.25rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  background: rgb(229, 84, 115);
+  padding: 10px 15px;
+}
+
+.banner-img {
+  width: 50%;
+}
+
+.banner-img img {
+  width: 100%;
+}
+
+/* FEATURE */
+
+.feature {
+  max-width: 1440px;
+  margin: 180px auto 128px;
+  text-align: center;
+}
+
+.feature h2 {
+  color: rgb(39, 39, 39);
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.feature p {
+  color: rgba(39, 39, 39, 0.6);
+  font-size: 1.12rem;
+  font-weight: 400;
+  line-height: 30px;
+  padding: 25px 30%;
+}
+
+.feature-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.feature-card {
+  height: 605px;
+  border-top-left-radius: 300px;
+  border-top-right-radius: 300px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.feature-card img {
+  position: absolute;
+  bottom: 0px;
+  right: 10%;
+}
+
+#feature-img-2 img {
+  bottom: 30px;
+}
+
+#feature-img-1 {
+  background-color: rgba(167, 33, 98, 0.15);
+}
+
+#feature-img-2 {
+  background-color: rgba(5, 151, 160, 0.15);
+}
+
+#feature-img-3 {
+  background-color: rgba(71, 125, 17, 0.15);
+}
+
+.card a {
+  color: rgb(39, 39, 39);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* RESPONSIVE LAYOUT */
+@media screen and (max-width: 576px) {
+  .feature-cards {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0px 10%;
+  }
+
+  #feature-img-2 img {
+    right: -15px;
+  }
 }
