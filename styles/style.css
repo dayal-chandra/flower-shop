@@ -125,8 +125,53 @@ header {
   font-weight: 700;
 }
 
+/* TESTIMONIAL */
+.testimonial {
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 128px;
+  padding: 85px 0px;
+  border-radius: 8px;
+  background: rgba(39, 39, 39, 0.05);
+}
+
+.card-1 {
+  text-align: center;
+}
+
+.card-1 h4 {
+  padding-top: 25px;
+}
+
 /* RESPONSIVE LAYOUT */
 @media screen and (max-width: 576px) {
+  .banner {
+    flex-direction: column;
+  }
+
+  .banner-title {
+    width: 100%;
+  }
+
+  .banner-title h1 {
+    padding: 0px 20px;
+  }
+
+  .banner-title p {
+    padding: 20px;
+  }
+
+  .banner-title button {
+    margin-left: 20px;
+  }
+
+  .banner-img {
+    width: 100%;
+  }
+
   .feature-cards {
     grid-template-columns: repeat(1, 1fr);
     padding: 0px 10%;
@@ -134,5 +179,15 @@ header {
 
   #feature-img-2 img {
     right: -15px;
+  }
+
+  .feature p {
+    padding: 25px 10%;
+  }
+
+  .testimonial {
+    flex-direction: column;
+    gap: 50px;
+    padding: 30px 0px;
   }
 }
